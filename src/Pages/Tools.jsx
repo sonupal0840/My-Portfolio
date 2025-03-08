@@ -19,7 +19,7 @@ const Tools = () => {
           <img src="./Assets/canva.svg" alt="" className={style.Icon}/>
           <img src="./Assets/figma.svg" alt="" className={style.Icon}/>
           <img src="./Assets/git.svg" alt="" className={style.Icon}/>
-          <img src="./Assets/chart.js_logo.svg" alt="" className={style.Icon}/>
+          <img src="./Assets/Chart.js_logo.svg" alt="" className={style.Icon}/>
           <img src="./Assets/word.png" alt="" className={style.Icon}/>
        
       </div>

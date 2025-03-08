@@ -8,3 +8,7 @@ body{
     background-color: black;
     color: rgba(240, 210, 210, 0.795);
 }
+a{
+    font-size: 20px;
+    color: blue;
+  }

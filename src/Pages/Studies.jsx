@@ -12,7 +12,7 @@ const Studies = () => {
       institution: "Technocrats Institute of Technology - CSE (2024)",
       course: "B.Tech (CSE - AIML)",
       percentage: "87.30 (In CGPA 8.73)",
-      marksheet:"./src/Assets/final semester marksheet.png"
+      marksheet:"./Assets/final semester marksheet.png"
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const Studies = () => {
       institution: "Gyan Bharti Convent Higher Secondary School (2020)",
       course: "PCM",
       percentage: "72.80",
-      marksheet:"./src/Assets/02.jpg"
+      marksheet:"./Assets/02.jpg"
 
     },
     {
@@ -29,7 +29,7 @@ const Studies = () => {
       institution: " Gyan Bharti Convent Higher Secondary School (2018)",
       course: "General",
       percentage: "89.80",
-      marksheet:"./src/Assets/01 (2).jpg"
+      marksheet:"./Assets/01 (2).jpg"
 
     },
   ];
