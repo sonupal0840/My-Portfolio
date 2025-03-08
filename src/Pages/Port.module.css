@@ -1,0 +1,35 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 0, 0, 0.208);
+    align-items: center;
+    margin: auto;
+    margin-top: 15px;
+    position:sticky;
+    z-index: 1000;
+}
+.Navbar> aside{
+        font-size: 36px;
+        font-weight: bold;
+        background: linear-gradient(to right, #ff007f, #6a00ff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 20px;
+}
+.Navbar>ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    /* border: #6a00ff 1px solid; */
+}
+.Navbar>ul>li{
+    font-size: 20px;
+    /* font-weight: bold; */
+    /* border: #ff007f .1px solid; */
+    padding: 10px;
+}
