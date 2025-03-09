@@ -1,43 +1,73 @@
-  /* Container styles */
-  .container {
-    /* text-align: center; */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(252, 6, 6, 0.447);
-    max-width: 1100px;
-    margin: auto;
-    margin-bottom: 100px;
-  }
-  
-  /* Title styles */
-  .title {
-    font-size: 36px;
-    font-weight: bold;
-    background: linear-gradient(to right, #ff007f, #6a00ff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
-  }
-  .container>div{
-    align-items: center;
-    margin: 50px;
-    display: grid;
-    grid-template-rows: 4;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .Certificates{
-    width: 250px;
-    height: 200px;
-    padding: 20px;
-  }
-  .button{
-    /* width: 150px; */
-    /* height: 50px; */
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgb(6, 104, 252);
-    margin-left: 7% ;
-    margin-bottom: 50px;
-    background: #000;
-  }
+/* Container styles */
+.container {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(252, 6, 6, 0.447);
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 100px;
+  /* text-align: center; */
+  position: relative;
+}
+
+/* Title styles */
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff007f, #6a00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Right to Left Effect */
+.Certificates {
+  width: 250px;
+  height: 200px;
+  padding: 20px;
+  transition: transform 1.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateX(40px); /* Move images from right side */
+}
+
+/* Show images when they become visible */
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Hide images when they scroll back up */
+.hide {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+/* Button */
+.button {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(6, 104, 252);
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-bottom: 50px;
+  background: #000;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #222;
+}
