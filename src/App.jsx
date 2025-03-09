@@ -27,7 +27,7 @@ const ScrollToSection = () => {
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/My-Protfolio">
             <ScrollToSection />
             <div id=""><Portfolio/></div>  {/* Navbar is always visible */}
             <div id="/"><Home /></div>
