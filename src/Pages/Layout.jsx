@@ -53,30 +53,30 @@ const Layout = () => {
 
   return (
     <div className={styles.container1}>
-      <section ref={(el) => (sectionsRef.current[0] = el)} className={styles.section1}>
+      <section ref={(el) => (sectionsRef.current[0] = el)} className={styles.section1} id="">
         <Portfolio />
       </section>
-      <section ref={(el) => (sectionsRef.current[1] = el)} className={styles.section1}>
+      <section ref={(el) => (sectionsRef.current[1] = el)} className={styles.section1} >
         <Home />
       </section>
-      <section ref={(el) => (sectionsRef.current[2] = el)} className={styles.section1}>
+      <section ref={(el) => (sectionsRef.current[2] = el)} className={styles.section1} id="about">
         <About />
       </section>
-      <section ref={(el) => (sectionsRef.current[3] = el)} className={styles.section1}>
+      <section ref={(el) => (sectionsRef.current[3] = el)} className={styles.section1} id="studies">
         <Studies />
       </section>
-      <section ref={(el) => (sectionsRef.current[4] = el)} className={styles.section1}>
+      <section ref={(el) => (sectionsRef.current[4] = el)} className={styles.section1} id="skill">
         <TechnicalSkill />
       </section>
-      <section ref={(el) => (sectionsRef.current[5] = el)} className={styles.section1}>
+      <section ref={(el) => (sectionsRef.current[5] = el)} className={styles.section1} id="certificate">
         <Certificates />
       </section>
-      <section ref={(el) => (sectionsRef.current[6] = el)} className={styles.section1}>
+      <section ref={(el) => (sectionsRef.current[6] = el)} className={styles.section1} id="tools">
         <Tools />
       </section>
-      <section ref={(el) => (sectionsRef.current[7] = el)}>
+      {/* <section ref={(el) => (sectionsRef.current[7] = el)}>
         <Footer />
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div>
             <div className={style.container}>
-                <img src={`${process.env.PUBLIC_URL}/assets/myImg.jpg`} alt="Profile" />
+                <img src={`${import.meta.env.BASE_URL}/assets/myImg.jpg`} alt="Profile" />
                 <div className={style.profile}>
                     <p> ||Python Developer||</p>
                     <p>||Frontend Developer||</p>
