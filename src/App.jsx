@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter,  useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -8,6 +8,7 @@ import Portfolio from "./Pages/Protfolio";
 import Certificates from "./Pages/Certificates";
 import Tools from "./Pages/Tools";
 import TechnicalSkill from "./Pages/TechnicalSkill";
+// import Navbar from "./Components/Navbar"; // Ensure Navbar exists
 
 const ScrollToSection = () => {
     const location = useLocation();
@@ -27,16 +28,18 @@ const ScrollToSection = () => {
 
 const App = () => {
     return (
-        <BrowserRouter basename="/My-Protfolio">
+        <>
             <ScrollToSection />
-            <div id=""><Portfolio/></div>  {/* Navbar is always visible */}
-            <div id="/"><Home /></div>
+            <Portfolio/> {/* Navbar always visible */}
+
+            {/* Full-page sections */}
+            <div id="home"><Home /></div>
             <div id="about"><About /></div>
             <div id="studies"><Studies /></div>
             <div id="skill"><TechnicalSkill /></div>
             <div id="certificate"><Certificates /></div>
             <div id="tools"><Tools /></div>
-        </BrowserRouter>
+        </>
     );
 };
 

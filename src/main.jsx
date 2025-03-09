@@ -1,11 +1,16 @@
-import { createRoot } from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import "./global.css";
+import "./global.css"
 
-const rootElement = document.getElementById("root");
-
-if (rootElement) {
-  createRoot(rootElement).render(<App />);
-} else {
-  console.error("❌ Root element not found! Make sure your HTML has `<div id='root'></div>`");
-}
+ReactDOM.createRoot(document.getElementById("root")).render(
+    <React.StrictMode>
+        <BrowserRouter 
+            basename="/My-Portfolio" 
+            future={{ v7_relativeSplatPath: true, v7_startTransition: true }} // 👈 Add this
+        >
+            <App />
+        </BrowserRouter>
+    </React.StrictMode>
+);
