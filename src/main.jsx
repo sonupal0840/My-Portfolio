@@ -8,7 +8,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <HashRouter 
         // basename="/My-Portfolio"
-        // future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
         > 
             <App />
         </HashRouter>

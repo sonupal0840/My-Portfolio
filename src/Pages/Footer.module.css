@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    /* border-radius: 10px; */
+    border: 1px solid rgba(255, 0, 0, 0.208);
+    align-items: center;
+    margin: auto;
+    background: white;
+    height: 300px;
+    margin-top: 15px;
+    position:sticky;
+    z-index: 1000;
+}

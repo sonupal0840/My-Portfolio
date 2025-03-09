@@ -19,24 +19,78 @@
     margin-bottom: 20px;
   }
 
-  .container>section{
+  .container > section {
     margin: auto;
-    justify-items: center;
-    display: grid;
-    /* grid-template-rows: 4; */
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center; 
+    gap: 10px; 
+}
+.stack{
+  margin-bottom: 20px;
+}
+  .container>section>.programming{
+    width:200px;
+    height: 240px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(6, 104, 252, 0.454);
+
   }
-  .container>section> div{
-    width: 300px;
+  .container>section>.web{
+    width:500px;
     height: 250px;
     margin-top: 20px;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(6, 104, 252, 0.454);
+
   }
-  .Icon {
+  .container>section>.web>section{
+    display: flex;
+    justify-content: space-around;
+  }
+  .container>section>.web>.frontendSection>div>main{
+    display: flex;
+  }
+  .container>section>.web>.frontendSection>div>main>font{
+    margin:30px 0 0 10px;
+
+  }
+  .container>section>div>.framework{
+    width: 200px;
+    height: 110px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(6, 104, 252, 0.454);
+
+  }
+
+  .container>section> .programming>main{
+    display: flex;
+  }
+  
+  .container>section> .programming>main>font{
+    margin:30px 0 0 10px;
+
+  }
+  .container>section> div>.framework>main{
+    display: flex;
+  }
+  .container > section > div>.framework:first-child> main>img{
     width: 100px;
-    height: 100px;
+    height: 90px;
+  }
+  .container>section>div> .framework>main>font{
+    margin:30px 0 0 10px;
+
+  }
+  
+  .Icon {
+    width: 70px;
+    height: 70px;
     padding: 10px;
   }
+  
