@@ -46,7 +46,7 @@
 // _____________________________________________________________________________________________
 
 import { Routes, Route } from "react-router-dom";
-import Layout from "./Layout";  // ✅ Layout को Import किया
+import Layout from "./Pages/Layout";  // ✅ Layout को Import किया
 
 const App = () => {
     return (
