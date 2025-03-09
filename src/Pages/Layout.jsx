@@ -6,14 +6,14 @@ import styles from "./Layout.module.css"; // ✅ Module CSS Import
 
 gsap.registerPlugin(ScrollTrigger);
 
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Studies from "./Pages/Studies";
-import Portfolio from "./Pages/Portfolio";
-import Certificates from "./Pages/Certificates";
-import Tools from "./Pages/Tools";
-import TechnicalSkill from "./Pages/TechnicalSkill";
-import Footer from "./Pages/Footer";
+import Home from "./Home";
+import About from "./About";
+import Studies from "./Studies";
+import Portfolio from "./Portfolio";
+import Certificates from "./Certificates";
+import Tools from "./Tools";
+import TechnicalSkill from "./TechnicalSkill";
+import Footer from "./Footer";
 
 const Layout = () => {
   const sectionsRef = useRef([]);

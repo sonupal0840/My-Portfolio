@@ -7,7 +7,8 @@ const Home = () => {
         <div>
             <div className={style.container}>
                 {/* <img src={myImg} alt="" /> */}
-                <img src="./public/assets/myImg.jpg" alt="Profile" />
+                {/* <img src="/assets/myImg.jpg" alt="Profile" /> */}
+                <img src="/assets/myImg.jpg" alt="Profile" />
                 <div className={style.profile}>
                     <p> ||Python Developer||</p>
                     <p>||Frontend Developer||</p>
