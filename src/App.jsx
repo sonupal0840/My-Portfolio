@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { HashRouter as Router, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom"; // ❌ HashRouter hata diya!
 
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -27,17 +27,16 @@ const ScrollToSection = () => {
 
 const App = () => {
     return (
-        <Router>
+        <>
             <ScrollToSection />
             <Portfolio /> 
-
             <div id="home"><Home /></div>
             <div id="about"><About /></div>
             <div id="studies"><Studies /></div>
             <div id="skill"><TechnicalSkill /></div>
             <div id="certificate"><Certificates /></div>
             <div id="tools"><Tools /></div>
-        </Router>
+        </>
     );
 };
 

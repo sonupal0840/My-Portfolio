@@ -9,18 +9,18 @@ const Tools = () => {
       <h2 className={style.title}>Tools</h2>
       <div>
         
-          <img src="./Assets/python.svg" alt=""  className={style.Icon}/>
-          <img src="./Assets/react.svg" alt="" className={style.Icon} />
-          <img src="./Assets/sql.svg" alt="" className={style.Icon} />
-          <img src="./Assets/django.svg" alt=""  className={style.Icon}/>
-          <img src="./Assets/html.svg" alt=""  className={style.Icon}/>
-          <img src="./Assets/css-alt.svg" alt=""  className={style.Icon}/>
-          <img src="./Assets/javascript.svg" alt="" className={style.Icon}/>
-          <img src="./Assets/canva.svg" alt="" className={style.Icon}/>
-          <img src="./Assets/figma.svg" alt="" className={style.Icon}/>
-          <img src="./Assets/git.svg" alt="" className={style.Icon}/>
-          <img src="./Assets/Chart.js_logo.svg" alt="" className={style.Icon}/>
-          <img src="./Assets/word.png" alt="" className={style.Icon}/>
+          <img src="./assets/python.svg" alt=""  className={style.Icon}/>
+          <img src="./assets/react.svg" alt="" className={style.Icon} />
+          <img src="./assets/sql.svg" alt="" className={style.Icon} />
+          <img src="./assets/django.svg" alt=""  className={style.Icon}/>
+          <img src="./assets/html.svg" alt=""  className={style.Icon}/>
+          <img src="./assets/css-alt.svg" alt=""  className={style.Icon}/>
+          <img src="./assets/javascript.svg" alt="" className={style.Icon}/>
+          <img src="./assets/canva.svg" alt="" className={style.Icon}/>
+          <img src="./assets/figma.svg" alt="" className={style.Icon}/>
+          <img src="./assets/git.svg" alt="" className={style.Icon}/>
+          <img src="./assets/Chart.js_logo.svg" alt="" className={style.Icon}/>
+          <img src="./assets/word.png" alt="" className={style.Icon}/>
        
       </div>
         

@@ -9,11 +9,11 @@ const TechnicalSkill = () => {
             <div className={style.programming}>
                 <h3> <b>Programming</b></h3>
                 <main>
-                    <img src="./Assets/python.svg" alt=""  className={style.Icon}/><br />
+                    <img src="./assets/python.svg" alt=""  className={style.Icon}/><br />
                     <font>Python</font>
                 </main>
                 <main>
-                    <img src="./Assets/javascript.svg" alt="" className={style.Icon}/>
+                    <img src="./assets/javascript.svg" alt="" className={style.Icon}/>
                     <font>JavaScript</font>
                 </main>
                 
@@ -21,7 +21,7 @@ const TechnicalSkill = () => {
             <div className={style.programming}>
                 <h3> <b>Web Technology</b></h3>
                 <main>
-                    <img src="./Assets/javascript.svg" alt="" className={style.Icon}/>
+                    <img src="./assets/javascript.svg" alt="" className={style.Icon}/>
                     <font>JavaScript</font>
                 </main>
             </div>

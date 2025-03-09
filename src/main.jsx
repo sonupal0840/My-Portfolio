@@ -6,10 +6,8 @@ import "./global.css"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <BrowserRouter 
-            basename="/My-Portfolio" 
-            future={{ v7_relativeSplatPath: true, v7_startTransition: true }} // 👈 Add this
-        >
+        <BrowserRouter basename="/My-Portfolio"
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}> 
             <App />
         </BrowserRouter>
     </React.StrictMode>
