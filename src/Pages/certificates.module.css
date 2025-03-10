@@ -6,14 +6,16 @@
   max-width: 1100px;
   margin: auto;
   margin-bottom: 100px;
-  /* text-align: center; */
   position: relative;
+  width: 100%; /* Ensures container spans full width */
+  box-sizing: border-box; /* Prevents overflow issues */
 }
 
 /* Title styles */
 .title {
   font-size: 36px;
   font-weight: bold;
+
   background: linear-gradient(to right, #ff007f, #6a00ff);
   background-clip: text;
   -webkit-background-clip: text;
@@ -33,7 +35,7 @@
 /* Right to Left Effect */
 .Certificates {
   width: 250px;
-  height: 200px;
+  height: auto; /* Maintain aspect ratio */
   padding: 20px;
   transition: transform 1.5s ease-in-out, opacity 0.5s ease-in-out;
   opacity: 0;
@@ -54,20 +56,83 @@
 
 /* Button */
 .button {
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgb(6, 104, 252);
   margin-top: 20px;
-  margin-left: 70px;
-  margin-bottom: 50px;
   background: #000;
   color: white;
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
   transition: background 0.3s ease;
+  text-align: center;
 }
 
 .button:hover {
   background: #222;
+}
+
+
+/* Tablet View (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    border-radius: 20px;
+    width: 90%;
+    padding: 15px;
+  }
+
+  /* 2-column grid layout on tablets */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+
+  .Certificates {
+    width: 90%; /* Make certificates take most of the container width */
+    height: auto;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .button {
+    font-size: 16px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Mobile View (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+    width: 95%;
+  }
+
+  /* 1-column grid layout on small screens */
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .Certificates {
+    width: 100%; /* Full width */
+    height: auto;
+    padding: 5px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .button {
+    font-size: 14px;
+    width: 100%; /* Full width button for better touch */
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
 }

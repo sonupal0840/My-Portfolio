@@ -1,78 +1,120 @@
 .container {
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(252, 6, 6, 0.447);
-    max-width: 1100px;
-    display: grid;
-    grid-template-columns: 1;
-    grid-row: 3;
-    margin: auto ;
-    margin-bottom: 100px;
-  }
-  .container>h2{
-    font-size: 36px;
-    font-weight: bold;
-    background: linear-gradient(to right, #ff007f, #6a00ff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
-  }
-  .graduation{
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgb(6, 104, 252);
-    max-width: 600px;
-    
-    margin-left: 10px ;
-    margin-bottom: 50px;
-  }
-  .graduation >h3{
-    font-size: 1.5rem;
-  }
-  .graduation >section{
-    margin:10px;
-  }
-  .graduation> section > p{
-    margin: 10px;
-    gap: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(252, 6, 6, 0.447);
+  max-width: 1100px;
+  width: 100%; /* Ensure it spans the full width */
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.container > h2 {
+  font-size: 36px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff007f, #6a00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+/* Graduation Box */
+.graduation {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(6, 104, 252);
+  max-width: 600px;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  transition: all 0.3s ease;
+}
+
+.graduation > h3 {
+  font-size: 1.5rem;
+}
+
+.graduation > section {
+  margin: 10px;
+}
+
+.graduation section > p {
+  margin: 10px;
+  gap: 10px;
+}
+
+.graduation:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1px 15px rgb(203, 25, 25);
+  border-radius: 0 50px;
+}
+.marksheet {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(6, 104, 252);
+  margin-top: 20px;
+  background: #000;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+.marksheet:hover {
+  background: #222;
+}
+
+/* Laptop/Desktop View */
+@media screen and (min-width: 769px) {
+  .educationWrapper {
+    display: block; /* Desktop retains block layout */
   }
 
-  .graduation section {
-    margin-left: 20px;
-  }
-  
-  .graduation h5 {
-    font-size: 1.2rem;
-    color: #f6dfdfee;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-  }
-  .graduation h5 > b {
-    margin-left: 10px;
-  }
-  
-  .graduation:hover {
-    transform: translateY(-3px);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 1px 15px rgb(203, 25, 25);
-    border-radius: 0 50px;
-    transform: scale(1.1);
-    width: 550px;
-    margin-left: 40px;
-  }
-  
   .container .graduation:nth-of-type(2) {
     margin-left: calc(80% - 400px);
   }
-  
-  .marksheet{
-    /* width: 150px; */
-    /* height: 50px; */
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgb(6, 104, 252);
-    
-    background: #000;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .educationWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
+
+  .container {
+    padding: 15px; /* Reduce padding on mobile */
+    max-width: 90%; /* Make the container's width responsive */
+    width: 90%; /* Ensure container scales with screen size */
+  }
+
+  /* Adjust margins to be equal on both sides for each graduation element */
+  .graduation {
+    width: 100%;
+    max-width: 90%;
+    margin-left: 5%; /* Equal left margin */
+    margin-right: 5%; /* Equal right margin */
+    padding-left: 10px; /* Add left padding */
+    padding-right: 10px; /* Add right padding */
+  }
+}
+
+/* Very Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px; /* Further reduce padding on very small screens */
+    max-width: 95%; /* Increase container width for very small screens */
+    width: 95%; /* Ensure container fills up the width */
+  }
+
+  .container > h2 {
+    font-size: 24px; /* Adjust heading font size */
+  }
+
+  .graduation {
+    margin-left: 5%; /* Equal left margin for very small devices */
+    margin-right: 5%; /* Equal right margin for very small devices */
+  }
+}

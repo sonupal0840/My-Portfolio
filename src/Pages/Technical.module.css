@@ -1,96 +1,167 @@
 .container {
-    /* text-align: center; */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(252, 6, 6, 0.447);
-    max-width: 1100px;
-    margin: auto;
-    margin-bottom: 100px;
-  }
-  
-  /* Title styles */
-  .title {
-    font-size: 36px;
-    font-weight: bold;
-    background: linear-gradient(to right, #ff007f, #6a00ff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(252, 6, 6, 0.447);
+  max-width: 1100px;
+  width: 100%; /* Ensure it spans the full width */
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+/* Title styles */
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff007f, #6a00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.container > section {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  gap: 10px;
+}
+
+/* Stack Section */
+.stack {
+  margin-bottom: 20px;
+}
+
+/* .programming, .web, .framework */
+.container > section > .programming,
+.container > section > .web,
+.container > section > .framework {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(6, 104, 252, 0.454);
+  margin-top: 20px;
+}
+
+.container > section > .programming {
+  width: 200px;
+  height: 240px;
+}
+
+.container > section > .web {
+  width: 500px;
+  height: 240px;
+}
+
+.container > section > .web > section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container > section > .web .frontendSection > div > main {
+  display: flex;
+}
+
+.container > section > .web .frontendSection > div > main > font {
+  margin: 30px 0 0 10px;
+}
+
+.container > section > div > .framework {
+  width: 200px;
+  height: 110px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(6, 104, 252, 0.454); /* Added box shadow */
+  margin-top: 20px;
+}
+
+.container > section > .programming > main,
+.container > section > div > .framework > main {
+  display: flex;
+}
+
+.container > section > .programming > main > font,
+.container > section > div > .framework > main > font {
+  margin: 20px 0 0 10px;
+  /* align-items: center; */
+}
+
+.container > section > .framework:first-child > main > img {
+  width: 100px;
+  height: 90px;
+}
+
+/* Icon */
+.Icon {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px; /* Reduce padding on mobile */
+    max-width: 90%; /* Make the container's width responsive */
+    width: 90%; /* Ensure container scales with screen size */
   }
 
   .container > section {
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    justify-items: center; 
-    gap: 10px; 
-}
-.stack{
-  margin-bottom: 20px;
-}
-  .container>section>.programming{
-    width:200px;
-    height: 240px;
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(6, 104, 252, 0.454);
-
+    flex-direction: column; /* Stack the child elements vertically on mobile */
+    align-items: center; /* Center the elements */
   }
-  .container>section>.web{
-    width:500px;
-    height: 250px;
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(6, 104, 252, 0.454);
-
-  }
-  .container>section>.web>section{
-    display: flex;
-    justify-content: space-around;
-  }
-  .container>section>.web>.frontendSection>div>main{
-    display: flex;
-  }
-  .container>section>.web>.frontendSection>div>main>font{
-    margin:30px 0 0 10px;
-
-  }
-  .container>section>div>.framework{
-    width: 200px;
-    height: 110px;
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(6, 104, 252, 0.454);
-
+  .container > section > .web {
+    width: 100%;
+    height: fit-content;
   }
 
-  .container>section> .programming>main{
-    display: flex;
+  .container > section > .programming,
+  .container > section > .web,
+  .container > section > div > .framework > main {
+    width: 100%; /* Ensure child elements are responsive and fit the container */
+    margin: 10px 0; /* Add vertical margin for spacing */
   }
   
-  .container>section> .programming>main>font{
-    margin:30px 0 0 10px;
+ 
 
+  /* Ensure items inside .web are aligned in a row in mobile view */
+  .container > section > .web > section{
+    
+    flex-direction: column; 
+    gap: 10px; /* Add gap between items */
   }
-  .container>section> div>.framework>main{
-    display: flex;
-  }
-  .container > section > div>.framework:first-child> main>img{
-    width: 100px;
-    height: 90px;
-  }
-  .container>section>div> .framework>main>font{
-    margin:30px 0 0 10px;
 
-  }
-  
+  /* Adjust icon size for mobile */
   .Icon {
-    width: 70px;
-    height: 70px;
-    padding: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
   }
-  
+
+  .container > section > .web .frontendSection > div > main > font,
+  .container > section > div > .framework > main > font,
+  .container > section > .programming > main > font {
+    margin: 15px 0 0 10px; /* Adjust font margins */
+  }
+}
+
+/* Very Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px; /* Further reduce padding on very small screens */
+    max-width: 95%; /* Increase container width for very small screens */
+    width: 95%; /* Ensure container fills up the width */
+  }
+
+  .container > section > .programming,
+  .container > section > .web,
+  .container > section > div > .framework> main
+  {
+    width: 100%; /* Ensure child elements take full width on very small screens */
+  }
+  .container > section > .web .frontendSection > div > main > font,
+  .container > section > div > .framework > main > font,
+  .container > section > .programming > main > font {
+    margin: 20px 0 0 10px; /* Adjust font margins */
+  }
+
+}

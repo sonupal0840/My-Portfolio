@@ -4,9 +4,9 @@
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(252, 6, 6, 0.447);
   max-width: 1100px;
+  width: 100%; /* Ensures the container spans the full width */
   margin: auto;
   margin-bottom: 20px;
-  /* text-align: center; */
   overflow: hidden;
 }
 
@@ -65,3 +65,69 @@
 .show:nth-child(10), .hide:nth-child(3) { transition-delay: 1.8s; }
 .show:nth-child(11), .hide:nth-child(2) { transition-delay: 2.0s; }
 .show:nth-child(12), .hide:nth-child(1) { transition-delay: 2.2s; }
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  /* Adjust grid layout to 2 columns on smaller screens */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Icon {
+    width: 80px; /* Smaller icon on mobile */
+    height: 80px;
+  }
+
+  .title {
+    font-size: 28px; /* Adjust title size for smaller screens */
+  }
+
+  /* Adjust the container padding */
+  .container {
+    padding: 15px;
+  }
+
+  /* Adjust container width for better responsiveness */
+  .container {
+    width: 90%; /* Ensure it doesn't stretch too much */
+    margin-bottom: 30px; /* Extra margin on smaller screens */
+  }
+
+  /* Adjust spacing and grid layout for smaller devices */
+  .grid {
+    gap: 15px;
+  }
+}
+
+/* Very Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  /* Adjust grid layout to 1 column on very small screens */
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Icon {
+    width: 60px; /* Further reduce icon size */
+    height: 60px;
+  }
+
+  .title {
+    font-size: 24px; /* Smaller font size for very small screens */
+  }
+
+  .container {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  /* Adjust grid gap for small screens */
+  .grid {
+    gap: 10px;
+  }
+
+  /* Ensure the container stays within bounds on small screens */
+  .container {
+    width: 90%; /* Ensure container spans the full width on small devices */
+    margin-bottom: 20px; /* Adjust margin for small screens */
+  }
+}
