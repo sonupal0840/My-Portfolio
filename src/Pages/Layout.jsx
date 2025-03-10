@@ -74,9 +74,9 @@ const Layout = () => {
       <section ref={(el) => (sectionsRef.current[6] = el)} className={styles.section1} id="tools">
         <Tools />
       </section>
-      {/* <section ref={(el) => (sectionsRef.current[7] = el)}>
+      <section ref={(el) => (sectionsRef.current[7] = el)}>
         <Footer />
-      </section> */}
+      </section>
     </div>
   );
 };
