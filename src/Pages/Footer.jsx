@@ -1,21 +1,19 @@
 import React from "react";
-import "./Footer.css"; // Import the CSS file
+import styles from "./Footer.module.css"; // Importing CSS Module
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
+    <footer className={styles.footer}>
+      <div className={styles.footerContainer}>
         {/* About Section */}
-        <div className="footer-section about">
-          <h2 className="footer-title">About</h2>
-          <p>
-            This project showcases web development, programming, and frameworks with a fully responsive design.
-          </p>
+        <div className={styles.footerSection}>
+          <h2 className={styles.footerTitle}>About</h2>
+          <p>This project showcases web development, programming, and frameworks with a fully responsive design.</p>
         </div>
 
         {/* Quick Links Section */}
-        <div className="footer-section links">
-          <h2 className="footer-title">Quick Links</h2>
+        <div className={styles.footerSection}>
+          <h2 className={styles.footerTitle}>Quick Links</h2>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
@@ -25,8 +23,8 @@ const Footer = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="footer-section contact">
-          <h2 className="footer-title">Contact</h2>
+        <div className={styles.footerSection}>
+          <h2 className={styles.footerTitle}>Contact</h2>
           <p>Email: example@email.com</p>
           <p>Phone: +91 7000454350</p>
           <p>Location: Bhopal, India</p>
@@ -34,7 +32,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="footer-bottom">
+      <div className={styles.footerBottom}>
         <p>&copy; 2025 YourProject | All Rights Reserved</p>
       </div>
     </footer>
