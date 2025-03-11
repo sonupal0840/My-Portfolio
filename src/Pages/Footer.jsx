@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css"; // Importing CSS Module
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,10 +16,11 @@ const Footer = () => {
         <div className={styles.footerSection}>
           <h2 className={styles.footerTitle}>Quick Links</h2>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/studies">Studies</Link></li>
+              <li><Link to="/skill">Skills</Link></li>
+              <li><Link to="/tools">Projects</Link></li>
+              <li><Link to="/certificate">Certificates</Link></li>
           </ul>
         </div>
 
@@ -38,3 +40,4 @@ const Footer = () => {
     </footer>
   );
 };
+export default Footer;

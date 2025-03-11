@@ -4,8 +4,9 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import style from "./Port.module.css";
 
 const Portfolio = () => {
+    // Default theme को "dark" करने के लिए localStorage check करें
     const [darkMode, setDarkMode] = useState(
-        localStorage.getItem("theme") === "dark"
+        localStorage.getItem("theme") ? localStorage.getItem("theme") === "dark" : true
     );
 
     useEffect(() => {
