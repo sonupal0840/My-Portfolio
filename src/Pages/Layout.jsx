@@ -27,7 +27,7 @@ const Layout = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 0.5,  // ✅ पहले 1 था, अब 0.5 किया (Speed Boost 🚀)
+          duration: 0.1,  // ✅ पहले 1 था, अब 0.5 किया (Speed Boost 🚀)
           ease: "power2.out",
           delay: index * 0.1, // ✅ Stagger Effect (हर section 0.1s बाद animate होगा)
           scrollTrigger: {

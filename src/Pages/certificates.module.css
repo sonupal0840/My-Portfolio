@@ -5,7 +5,7 @@
   box-shadow: 0 4px 10px rgba(252, 6, 6, 0.447);
   max-width: 1100px;
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   position: relative;
   width: 100%; /* Ensures container spans full width */
   box-sizing: border-box; /* Prevents overflow issues */
