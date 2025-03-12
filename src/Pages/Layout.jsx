@@ -14,6 +14,7 @@ import Certificates from "./Certificates";
 import Tools from "./Tools";
 import TechnicalSkill from "./TechnicalSkill";
 import Footer from "./Footer";
+import Plateform from "./Plateform";
 
 const Layout = () => {
   const sectionsRef = useRef([]);
@@ -69,12 +70,15 @@ const Layout = () => {
         <TechnicalSkill />
       </section>
       <section ref={(el) => (sectionsRef.current[5] = el)} className={styles.section1} id="certificate">
+        <Plateform />
+      </section>
+      <section ref={(el) => (sectionsRef.current[6] = el)} className={styles.section1} id="certificate">
         <Certificates />
       </section>
-      <section ref={(el) => (sectionsRef.current[6] = el)} className={styles.section1} id="tools">
+      <section ref={(el) => (sectionsRef.current[7] = el)} className={styles.section1} id="tools">
         <Tools />
       </section>
-      <section ref={(el) => (sectionsRef.current[7] = el)}>
+      <section ref={(el) => (sectionsRef.current[8] = el)}>
         <Footer />
       </section>
     </div>

@@ -27,7 +27,7 @@ const Footer = () => {
         {/* Contact Section */}
         <div className={styles.footerSection}>
           <h2 className={styles.footerTitle}>Contact</h2>
-          <p>Email: sonupal0840@email.com</p>
+          <p>Email: sonupal0840@gmail.com</p>
           <p>Phone: +91 7000454350</p>
           <p>Location: Bhopal, Madhya Pradesh, India</p>
         </div>
