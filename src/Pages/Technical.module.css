@@ -157,6 +157,7 @@
   .container > section > .web,
   .container > section > div > .framework> main
   {
+    margin: 10px;
     width: 90%; /* Ensure child elements take full width on very small screens */
   }
   .container > section > .web .frontendSection > div > main > font,
