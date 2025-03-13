@@ -10,7 +10,7 @@
 
 /* Title styles */
 .title {
-  font-size: 36px;
+  font-size: 26px;
   font-weight: bold;
   background: linear-gradient(to right, #ff007f, #6a00ff);
   background-clip: text;
@@ -38,7 +38,7 @@
 .container > section > .framework {
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(6, 104, 252, 0.454);
+  box-shadow: 0 0 10px rgb(6, 104, 252);
   margin-top: 20px;
 }
 
@@ -70,7 +70,7 @@
   height: 110px;
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(6, 104, 252, 0.454); /* Added box shadow */
+  box-shadow: 0 0 10px rgb(6, 104, 252); /* Added box shadow */
   margin-top: 20px;
 }
 
@@ -110,15 +110,14 @@
     align-items: center; /* Center the elements */
   }
   .container > section > .web {
-    width: 100%;
     height: fit-content;
   }
 
   .container > section > .programming,
   .container > section > .web,
   .container > section > div > .framework > main {
-    width: 100%; /* Ensure child elements are responsive and fit the container */
-    margin: 10px 0; /* Add vertical margin for spacing */
+    width: 90%; /* Ensure child elements are responsive and fit the container */
+ 
   }
   
  
@@ -151,12 +150,14 @@
     max-width: 95%; /* Increase container width for very small screens */
     width: 95%; /* Ensure container fills up the width */
   }
-
+  .container > section{
+    margin-bottom: 10px;
+  }
   .container > section > .programming,
   .container > section > .web,
   .container > section > div > .framework> main
   {
-    width: 100%; /* Ensure child elements take full width on very small screens */
+    width: 90%; /* Ensure child elements take full width on very small screens */
   }
   .container > section > .web .frontendSection > div > main > font,
   .container > section > div > .framework > main > font,

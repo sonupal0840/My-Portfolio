@@ -15,7 +15,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 20px;
 }
 
 /* Graduation Box */
@@ -25,7 +24,7 @@
   box-shadow: 0 0 10px rgb(6, 104, 252);
   max-width: 600px;
   margin-left: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   transition: all 0.3s ease;
 }
 
