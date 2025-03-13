@@ -109,13 +109,13 @@
     flex-direction: column; /* Stack the child elements vertically on mobile */
     align-items: center; /* Center the elements */
   }
-  .container > section > .web {
-    height: fit-content;
-  }
+
+ 
 
   .container > section > .programming,
   .container > section > .web,
   .container > section > div > .framework > main {
+    height: fit-content;
     width: 90%; /* Ensure child elements are responsive and fit the container */
  
   }
