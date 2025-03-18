@@ -35,7 +35,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className={styles.footerBottom}>
-        <p>&copy; 2025 YourProject | All Rights Reserved</p>
+        <p>&copy; SonuPal | All Rights Reserved</p>
       </div>
     </footer>
   );
