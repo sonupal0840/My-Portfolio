@@ -1,0 +1,100 @@
+/* ✅ Main Container */
+.container {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(252, 6, 6, 0.447);
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+/* ✅ Heading Styling */
+.container > h3 {
+  font-size: 26px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff007f, #6a00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+
+/* ✅ Default Layout for Desktop/Laptop */
+.container > article {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Responsive layout ke liye */
+}
+
+/* ✅ Individual Project Card */
+.project {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(6, 104, 252);
+  width: 300px;
+  transition: all 0.3s ease-in-out;
+  /* text-align: center; */
+}
+hr{
+  margin-bottom: 10px;
+}
+/* ✅ Project Image */
+.project img {
+  width: 100%;
+  border-radius: 5px;
+}
+.container>div{
+  display: none;
+}
+
+/* ✅ Swiper Hidden by Default */
+.swiperContainer {
+  display: none;
+}
+
+/* ✅ Mobile Mode: Hide Default Layout & Show Swiper */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+    max-width: 90%;
+    width: 95%;
+    border-radius: 5px;
+    justify-content: center;
+  }
+
+  /* ❌ Hide Normal Layout in Small Screens */
+  .container > article {
+    display: none;
+  }
+  .container>div{
+    display: block;
+  }
+  .project{
+    width: 95%;
+    margin: 10px;
+
+  }
+
+  /* ✅ Show Swiper in Small Screens */
+  .swiperContainer {
+    display: block;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .swiper-slide {
+    display: flex;
+  }
+
+  .swiper-slide .project {
+    width: 95%;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+ 
+}

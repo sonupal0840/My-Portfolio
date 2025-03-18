@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Layout from "./Pages/Layout";  // ✅ Layout को Import किया
+import Layout from "./Components/Layout";  // ✅ Layout को Import किया
 
 const App = () => {
     return (
