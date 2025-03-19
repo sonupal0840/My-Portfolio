@@ -57,7 +57,7 @@ const Layout = () => {
 
   return (
     <div className={styles.container1}>
-      <section ref={(el) => (sectionsRef.current[0] = el)} className={styles.section1} id="">
+      <section ref={(el) => (sectionsRef.current[0] = el)} className={styles.section1} id="navbar">
         <Portfolio/>
       </section>
       <section ref={(el) => (sectionsRef.current[1] = el)} className={styles.section1} >
