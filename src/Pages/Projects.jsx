@@ -17,12 +17,16 @@ const Projects = () => {
           <h2>My-Portfolio</h2>
           <hr />
           <img src="./assets/Project1.png" alt="Project 1" />
+          <div><a href="https://sonupal0840.github.io/My-Portfolio/">View</a></div>
+
         </div>
 
         <div className={style.project}>
           <h2>Tech.care</h2>
           <hr />
           <img src="./assets/Project2.png" alt="Project 2" />
+          <div><a href="https://sonupal0840.github.io/Tech.care/">View</a></div>
+
         </div>
 
         <div className={style.project}>
@@ -45,7 +49,8 @@ const Projects = () => {
           <div className={style.project}>
             <h2>My-Portfolio</h2>
             <hr />
-            <img src="./assets/Project1.png" alt="Project 1" />
+            <img src="./assets/Project1.png" alt="Project 1" /><hr />
+            <div><a href="https://sonupal0840.github.io/My-Portfolio/">View</a></div>
           </div>
         </SwiperSlide>
 
@@ -54,6 +59,8 @@ const Projects = () => {
             <h2>Tech.care</h2>
             <hr />
             <img src="./assets/Project2.png" alt="Project 2" />
+            <div><a href="https://sonupal0840.github.io/Tech.care/">View</a></div>
+
           </div>
         </SwiperSlide>
 
