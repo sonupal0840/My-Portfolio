@@ -29,7 +29,7 @@ const Plateform = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/_alone_boy840/">
+                        <a href="https://www.instagram.com/jagdev0840/">
                             <img src="./assets/Instagram.svg" alt="" />
                             <b>Instagram</b>
                         </a>
