@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./Layout.module.css"; // ✅ Module CSS Import
 import { Link } from "react-router-dom";
-
+import { FaHome, FaBook, FaLaptopCode, FaAward, FaComments } from "react-icons/fa";
 import Portfolio from "./Portfolio";
 import About from "../Pages/About";
 import Home from "../Pages/Home";
@@ -63,16 +63,11 @@ const Layout = () => {
     <>
       <nav className={styles.footernav}>
         <ul >
-          <li><Link to="/about">🏡</Link></li>
-          <li><Link to="/studies">📔</Link></li>
-          <li><Link to="/Project">🖥️</Link></li>
-          <li><Link to="/certificate">🏆</Link></li>
-          <li><Link to="/Plateform">💬</Link></li>
-          {/* <li onClick={() => navigate("/about")}>🏡</li>
-          <li onClick={() => navigate("/studies")}>📔</li>
-          <li onClick={() => navigate("/Projects")}>🖥️</li>
-          <li onClick={() => navigate("/certificate")}>🏆</li>
-          <li onClick={() => navigate("/Platform")}>💬</li> */}
+        <li><Link to="/about"><FaHome /></Link></li>
+        <li><Link to="/studies"><FaBook /></Link></li>
+        <li><Link to="/Project"><FaLaptopCode /></Link></li>
+        <li><Link to="/certificate"><FaAward /></Link></li>
+        <li><Link to="/Plateform"><FaComments /></Link></li>
         </ul>
       </nav>
       <div className={styles.container1}>

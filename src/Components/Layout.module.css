@@ -35,14 +35,12 @@ html, body {
     }
     .footernav>ul{
         display: flex;
+        /* justify-content: center; */
         list-style: none;
         margin: auto;
-        gap: 50px;
+        gap: 40px;
     }
-    .footernav>ul>li{
-        box-shadow: 0px 0px 20px blue;
-        border-radius: 0px 20px 0px 20px;
-    }
+   
     
 }
 
