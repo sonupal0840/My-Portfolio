@@ -49,7 +49,7 @@ const Projects = () => {
           <div className={style.project}>
             <h2>My-Portfolio</h2>
             <hr />
-            <img src="./assets/Project1.png" alt="Project 1" /><hr />
+            <img src="./assets/Project1.png" alt="Project 1" />
             <div><a href="https://sonupal0840.github.io/My-Portfolio/">View</a></div>
           </div>
         </SwiperSlide>
