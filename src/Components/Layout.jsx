@@ -63,16 +63,16 @@ const Layout = () => {
     <>
       <nav className={styles.footernav}>
         <ul >
-          {/* <li><Link to="/about">🏡</Link></li>
+          <li><Link to="/about">🏡</Link></li>
           <li><Link to="/studies">📔</Link></li>
           <li><Link to="/Project">🖥️</Link></li>
           <li><Link to="/certificate">🏆</Link></li>
-          <li><Link to="/Plateform">💬</Link></li> */}
-          <li onClick={() => navigate("/about")}>🏡</li>
+          <li><Link to="/Plateform">💬</Link></li>
+          {/* <li onClick={() => navigate("/about")}>🏡</li>
           <li onClick={() => navigate("/studies")}>📔</li>
           <li onClick={() => navigate("/Projects")}>🖥️</li>
           <li onClick={() => navigate("/certificate")}>🏆</li>
-          <li onClick={() => navigate("/Platform")}>💬</li>
+          <li onClick={() => navigate("/Platform")}>💬</li> */}
         </ul>
       </nav>
       <div className={styles.container1}>

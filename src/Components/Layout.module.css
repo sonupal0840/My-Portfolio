@@ -24,11 +24,11 @@ html, body {
 .footernav{
     display: none;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:480px){
     .footernav{
         display:flex;
         position:fixed;
-        top: 90%;
+        top: 95%;
         width: 100%;
         /* border: 10px solid red; */
         
