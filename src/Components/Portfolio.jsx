@@ -28,7 +28,7 @@ const Portfolio = () => {
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/studies">Studies</Link></li>
                     <li><Link to="/Project">Projects</Link></li>
-                    <li><Link to="/certificate">Certificates</Link></li>
+                    <li><Link to="/http://localhost:5173/My-Portfolio/#/certificate">Certificates</Link></li>
                     <li><Link to="/Plateform">Contacts</Link></li>
                 </ul>
 
@@ -37,6 +37,7 @@ const Portfolio = () => {
                     {darkMode ? <FaMoon /> : <FaSun />}
                 </button>
             </nav>
+            
         </>
     );
 };

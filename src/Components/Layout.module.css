@@ -21,4 +21,28 @@ html, body {
     transform: translateY(50px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+.footernav{
+    display: none;
+}
+@media screen and (max-width:768px){
+    .footernav{
+        display:flex;
+        position:fixed;
+        top: 90%;
+        width: 100%;
+        /* border: 10px solid red; */
+        
+    }
+    .footernav>ul{
+        display: flex;
+        list-style: none;
+        margin: auto;
+        gap: 50px;
+    }
+    .footernav>ul>li{
+        box-shadow: 0px 0px 20px blue;
+        border-radius: 0px 20px 0px 20px;
+    }
+    
+}
 
