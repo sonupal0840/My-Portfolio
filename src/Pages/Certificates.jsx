@@ -2,10 +2,11 @@ import React, { useEffect, useState, useRef } from "react";
 import style from "./certificates.module.css";
 
 const certificatesData = [
+  { src: "./assets/sherlockscertificate.png", alt: "On Job Training" },
   { src: "./assets/Python basic.png", alt: "Python Basic" },
   { src: "./assets/python Codechef.png", alt: "Python CodeChef" },
-  { src: "./assets/sql1.png", alt: "SQL 1" },
-  { src: "./assets/Sql2.png", alt: "SQL 2" },
+  { src: "./assets/sql1.png", alt: "SQL Level 1" },
+  { src: "./assets/Sql2.png", alt: "SQL Level 2" },
   { src: "./assets/Html.png", alt: "HTML" },
   { src: "./assets/C++.png", alt: "C++" },
   { src: "./assets/Robonatus.png", alt: "Robonatus" },
@@ -23,14 +24,13 @@ const Certificates = () => {
       const rect = sectionRef.current.getBoundingClientRect();
       const screenHeight = window.innerHeight;
 
-      // Space calculation based on screen scroll
       const spaceAvailable = screenHeight - rect.top;
-      const imagesToShow = Math.floor(spaceAvailable / 300) * 3; // 3 images per row
-      setVisibleCount(imagesToShow);
+      const imagesToShow = Math.floor(spaceAvailable / 300) * 3;
+      setVisibleCount(Math.max(imagesToShow, 0)); // ✅ Prevent negative count
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check
+    handleScroll(); // Initial call
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -41,15 +41,27 @@ const Certificates = () => {
       <div className={style.grid}>
         {certificatesData.map((certificate, index) => (
           <img
+            loading="lazy"
             key={index}
             src={certificate.src}
-            alt={certificate.alt}
-            className={`${style.Certificates} ${index < visibleCount ? style.show : style.hide}`}
-            style={{ transitionDelay: `${(index % 3) * 200}ms` }} // Delay per row for better effect
+            alt={
+              certificate.alt.toLowerCase().includes("certificate")
+                ? certificate.alt
+                : `${certificate.alt} certificate`
+            }
+            className={`${style.Certificates} ${
+              index < visibleCount ? style.show : style.hide
+            }`}
+            style={{ transitionDelay: `${(index % 3) * 200}ms` }}
           />
         ))}
       </div>
-      <a href="./assets/Certificates.pdf" target="_blank" className={style.button}>
+      <a
+        href="./assets/Certificates.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={style.button}
+      >
         Download PDF
       </a>
     </section>

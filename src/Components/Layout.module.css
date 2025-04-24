@@ -30,12 +30,10 @@ html, body {
         position:fixed;
         top: 95%;
         width: 100%;
-        /* border: 10px solid red; */
         
     }
     .footernav>ul{
         display: flex;
-        /* justify-content: center; */
         list-style: none;
         margin: auto;
         gap: 40px;
