@@ -5,19 +5,15 @@ const About = () => {
     return (
         <div className={style.container}>
             <h2>About Me</h2><br /><br />
-           
-                <p>I am Sonu Pal, a passionate and dedicated Software Developer with a strong foundation in Python, SQL, JavaScript, React.js and  Html & CSS.
-                I recently completed my B.Tech in Computer Science (AIML) from Technocrats Institute of Technology, Bhopal, with a CGPA of 8.73.
 
-                I have hands-on experience in building intelligent systems and web applications, 
-                including an AI-powered Virtual Assistant and a React-based Tech Care Web Project. 
-                My technical expertise extends to DBMS, OOP, logical reasoning, and problem-solving,
-                and I have earned multiple certifications, including HackerRank Python (Pro) and SQL (Intermediate).
+            <p>
+                I am Sonu Pal, a Software Developer skilled in Python,Django, SQL, postgreSQL, JavaScript, React.js, and HTML & CSS. I recently completed an internship at <i><b>D.Dolphin Pvt. Ltd</b></i> and on-job training at <b><i>Sherlocks Life</i></b> as a Python/Backend Developer.
 
-                Beyond coding, I enjoy sewing clothes, cooking, and running. I am always eager to learn new technologies 
-                and contribute to innovative projects. Let's connect and collaborate!
-                </p>
-           
+                I hold a B.Tech in Computer Science (AIML) from Technocrats Institute of Technology, Bhopal (CGPA: 8.73), with hands-on experience in building AI-powered Virtual Assistants and React-based web applications. I’m certified in Python (Pro) and SQL (Intermediate) by HackerRank and passionate about backend development, DBMS, OOP, and problem-solving.
+
+                Beyond coding, I enjoy sewing, cooking, and running. Always eager to learn, grow, and collaborate on innovative projects!
+            </p>
+
         </div>
     )
 }

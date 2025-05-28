@@ -15,6 +15,7 @@ import TechnicalSkill from "../Pages/TechnicalSkill";
 import Tools from "../Pages/Tools";
 import Footer from "./Footer";
 import Projects from "../Pages/Projects";
+import Experience from "../Pages/Experience";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -79,6 +80,9 @@ const Layout = () => {
         </section>
         <section ref={(el) => (sectionsRef.current[2] = el)} className={styles.section1} id="about">
           <About />
+        </section>
+        <section ref={(el) => (sectionsRef.current[10] = el)} className={styles.section1} id="experience">
+          <Experience />
         </section>
         <section ref={(el) => (sectionsRef.current[3] = el)} className={styles.section1} id="studies">
           <Studies />
