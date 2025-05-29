@@ -1,0 +1,118 @@
+.container {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(252, 6, 6, 0.447);
+  max-width: 1100px;
+  width: 100%; /* Ensure it spans the full width */
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.container > h3 {
+  font-size: 26px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff007f, #6a00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-align: center; */
+}
+
+/* Experience Box */
+.experience {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(6, 104, 252);
+  max-width: 600px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.experience h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.experience section {
+  margin: 10px;
+}
+
+.experience section > p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.experience:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1px 15px rgb(203, 25, 25);
+  border-radius: 0 50px;
+}
+
+/* Swiper Container */
+.swiperContainer {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+/* Laptop/Desktop View */
+@media screen and (min-width: 769px) {
+  .experienceWrapper {
+    display: block;
+  }
+
+  .container .experience:nth-of-type(2) {
+    margin-left: calc(80% - 400px);
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .experienceWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .container {
+    padding: 15px;
+    max-width: 90%;
+    width: 90%;
+  }
+
+  .experience {
+    width: 100%;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Very Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+    max-width: 95%;
+    width: 95%;
+  }
+
+  .container > h3 {
+    font-size: 24px;
+  }
+
+  .experience {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
