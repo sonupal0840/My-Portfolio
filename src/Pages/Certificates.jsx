@@ -2,11 +2,13 @@ import React, { useEffect, useState, useRef } from "react";
 import style from "./certificates.module.css";
 
 const certificatesData = [
+  { src: "./assets/Internship.png", alt: "On Job Training" },
   { src: "./assets/sherlockscertificate.png", alt: "On Job Training" },
+  { src: "./assets/Django.png", alt: "On Job Training" },
   { src: "./assets/Python basic.png", alt: "Python Basic" },
-  { src: "./assets/python Codechef.png", alt: "Python CodeChef" },
   { src: "./assets/sql1.png", alt: "SQL Level 1" },
   { src: "./assets/Sql2.png", alt: "SQL Level 2" },
+  { src: "./assets/python Codechef.png", alt: "Python CodeChef" },
   { src: "./assets/Html.png", alt: "HTML" },
   { src: "./assets/C++.png", alt: "C++" },
   { src: "./assets/Robonatus.png", alt: "Robonatus" },

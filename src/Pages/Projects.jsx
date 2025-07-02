@@ -30,9 +30,17 @@ const Projects = () => {
         </div>
 
         <div className={style.project}>
+          <h2>Lead Generation Form</h2>
+          <hr />
+          <img src="./assets/leadForm.png" alt="Project 3" />
+          <div><a href="https://cybertechzone.onrender.com/">View</a></div>
+
+        </div>
+
+        <div className={style.project}>
           <h2>Reverse Complemented String</h2>
           <hr />
-          <img src="./assets/Project3.png" alt="Project 3" />
+          <img src="./assets/Project3.png" alt="Project 4" />
         </div>
       </article>
 
@@ -66,9 +74,19 @@ const Projects = () => {
 
         <SwiperSlide>
           <div className={style.project}>
+              <h2>Lead Generation Form</h2>
+              <hr />
+              <img src="./assets/leadForm.png" alt="Project 3" />
+              <div><a href="https://cybertechzone.onrender.com/">View</a></div>
+
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className={style.project}>
             <h2>Reverse Complemented String</h2>
             <hr />
-            <img src="./assets/Project3.png" alt="Project 3" />
+            <img src="./assets/Project3.png" alt="Project 4" />
           </div>
         </SwiperSlide>
       </Swiper>
